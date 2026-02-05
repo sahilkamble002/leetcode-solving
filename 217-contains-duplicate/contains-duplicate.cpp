@@ -5,6 +5,7 @@ public:
         unordered_set<int> seen;
 
         for(int num : nums){
+            //if find the duplicates rreturn true
             if(seen.find(num) != seen.end()){
                 return true;
             }
