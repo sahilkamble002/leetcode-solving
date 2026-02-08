@@ -11,7 +11,7 @@ public:
                 second_largest = largest;
                 largest = num;
             }
-            else if(num > second_largest && num < largest){
+            else if(num > second_largest && num != largest){
                 second_largest = num;
             }
             }
