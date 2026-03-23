@@ -1,7 +1,7 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
-            unordered_map<char, int> freq;
+    unordered_map<char, int> freq;
     
     for (char c : s) freq[c]++;
     
