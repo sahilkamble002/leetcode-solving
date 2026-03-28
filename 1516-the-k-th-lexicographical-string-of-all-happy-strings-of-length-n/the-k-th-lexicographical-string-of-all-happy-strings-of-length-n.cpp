@@ -1,5 +1,6 @@
 class Solution {
-public:string result = "";
+public:
+ public:string result = "";
     int count = 0;
     
     void solve(int n, int k, string &curr) {
