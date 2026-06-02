@@ -1,11 +1,10 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        int n = numbers.size();
-        int i = 0; 
-        int j = n-1;
+        int i = 0;
+        int j = numbers.size() -1;
 
-        vector<int> result;
+        vector<int>result;
 
         while(i < j){
             int sum = numbers[i]+numbers[j];
@@ -14,11 +13,11 @@ public:
                 result.push_back(j+1);
                 break;
             }
-            else if(sum > target){
+            else if( sum > target){
                 j--;
             }
             else{
-            i++;
+                i++;
             }
         }
         return result;
